@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6J9-ut-boO">
+                                <rect key="frame" x="95" y="614" width="224" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-kw-RJK">
+                                <rect key="frame" x="143" y="218" width="128" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice1" translatesAutoresizingMaskIntoConstraints="NO" id="tH3-kX-03P">
+                                        <rect key="frame" x="-56" y="12" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dice2" translatesAutoresizingMaskIntoConstraints="NO" id="lhQ-up-uNO">
+                                        <rect key="frame" x="-56" y="160" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="DkU-KF-71x"/>
+                                    <constraint firstAttribute="width" constant="128" id="kYX-e8-Ktz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-ud-RaM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dice App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hg-Zr-BE2">
+                                        <rect key="frame" x="113" y="77" width="189" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89490455390000001" green="0.58635437489999997" blue="0.31353968380000002" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYB-xY-oPc" userLabel="buttonView">
+                                <rect key="frame" x="0.0" y="526" width="414" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbW-D8-HQ8">
+                                        <rect key="frame" x="132" y="70" width="150" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="30"/>
+                                        <state key="normal" title="Dicing">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dicingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxg-j4-LcQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89490455390000001" green="0.58635437489999997" blue="0.31353968380000002" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.89135640101442815" green="0.80898852602507088" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qYB-xY-oPc" secondAttribute="trailing" id="3xz-Pg-hmE"/>
+                            <constraint firstItem="pwC-ud-RaM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7yx-hd-Qg5"/>
+                            <constraint firstItem="pwC-ud-RaM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8xj-IM-dlH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qYB-xY-oPc" secondAttribute="bottom" id="AiQ-9P-Ikl"/>
+                            <constraint firstItem="SFQ-kw-RJK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DcE-7y-ZDc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pwC-ud-RaM" secondAttribute="trailing" id="SYz-uw-MWe"/>
+                            <constraint firstItem="pwC-ud-RaM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uq0-4A-Tpp"/>
+                            <constraint firstItem="qYB-xY-oPc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="526" id="Z0q-7z-QvK"/>
+                            <constraint firstItem="qYB-xY-oPc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dIk-1X-fCe"/>
+                            <constraint firstItem="SFQ-kw-RJK" firstAttribute="top" secondItem="pwC-ud-RaM" secondAttribute="bottom" id="iJm-jZ-Ycb"/>
+                            <constraint firstItem="pwC-ud-RaM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nb7-5d-CMd"/>
+                            <constraint firstItem="SFQ-kw-RJK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w8f-0T-k9O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diceView1" destination="tH3-kX-03P" id="eID-1b-s6x"/>
+                        <outlet property="diceView2" destination="lhQ-up-uNO" id="eDg-f4-8Tw"/>
+                        <outlet property="showValueText" destination="6J9-ut-boO" id="6R8-dk-EbI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213.04347826086959" y="30.978260869565219"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dice1" width="320" height="320"/>
+        <image name="Dice2" width="320" height="320"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
